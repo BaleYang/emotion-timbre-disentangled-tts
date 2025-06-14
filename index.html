@@ -30,21 +30,21 @@
 	<div class="text-center">
 	<h2>Emotional Speech Synthesis Based on Emotion-Timbre Disentanglement</h2>
 
-<!-- 	[<a href="https://arxiv.org/">Paper</a>]
-	[<a href="https://github.com/FunAudioLLM/CosyVoice">Code</a>] -->
+	[<a href="">Paper</a>]
+	[<a href="">Code (will be open-sourced upon acceptance)</a>]
 	
 	<p class="fst-italic mb-0" style="margin-bottom: 15px;">
 	    <br>
-	    Jianing Yang<sup>1</sup>, Sheng Li<sup>2</sup>, Takahiro Shinozaki<sup>1</sup>
+	    Jianing Yang<sup>1</sup>, Sheng Li<sup>2</sup>, Takahiro Shinozaki<sup>2</sup>, Yuki Saito<sup>1</sup>, Hiroshi Saruwatari<sup>1</sup>
 	</p>
-	<p style="margin-bottom: 5px;"><b>1. Institute of Science Tokyo (formerly Tokyo Institute of Technology), Japan</b></p>
-	<p style="margin-bottom: 5px;"><b>2. National Institute of Information and Communications Technology (NICT), Japan</b></p>
-	<p style="margin-top: 10px;"><b>yo.k.ad@m.titech.ac.jp, sheng.li@ieee.org, shinot@ict.e.titech.ac.jp</b></p>
+	<p style="margin-bottom: 5px;"><b>1. The University of Tokyo, Japan</b></p>
+	<p style="margin-bottom: 5px;"><b>2. Institute of Science Tokyo (formerly Tokyo Institute of Technology), Japan</b></p>
+	<p style="margin-top: 10px;"><b>baleyang@g.ecc.u-tokyo.ac.jp</b></p>
 	
 
 	</div>
 	<p><b>Abstract:</b>
-		Recent advances in deep learning have significantly propelled the development of text-to-speech (TTS) systems, with particular interest in zero-shot TTS and style transfer. Most existing approaches rely on reference encoders to generate global style or emotion vectors, which are then used to synthesize speech. However, these methods often lack fine-grained control at the phoneme level, as global emotion representations fail to capture nuanced acoustic details. Moreover, encoding reference speech into a single global vector frequently leads to a loss of critical information, limiting the model’s ability to fully express emotional and prosodic subtleties. While decoupling reference speech features has recently gained attention, current applications remain limited and typically yield suboptimal performance when synthesizing emotional speech. To address these limitations, we propose a novel emotional TTS framework that enables fine-grained phoneme-level emotion control while disentangling intrinsic attributes of the reference speech. The proposed approach employs an unsupervised learning strategy to minimize mutual information between timbre and emotion features, effectively separating distinct style components from the reference Mel- spectrogram. Experimental results demonstrate that our  method outperforms baseline TTS systems in generating natural and emotionally rich speech. This work highlights the potential of disentangled and fine-grained representations in advancing the quality and flexibility of emotional TTS systems.
+		Current emotional TTS and style transfer methods rely on reference encoders for global style or emotion vectors but fail to capture nuanced acoustic details. To address these limitations, we propose a novel emotional TTS framework that enables fine-grained phoneme-level emotion embedding prediction while disentangling intrinsic attributes of the reference speech. The proposed approach employs a style disentanglement method to guide two feature extractors, reducing mutual information between timbre and emotion features and effectively separating distinct style components from the reference mel-spectrogram. Experimental results demonstrate that our method outperforms baseline TTS systems in generating natural and emotionally rich speech. This work highlights the potential of disentangled and fine-grained representations in advancing the quality and flexibility of emotional TTS systems.
 	 <p style="text-align: center;">
 		<img src="page.png" height="300" width="768">
 	</p>
